@@ -1,5 +1,7 @@
 <h1>PowerShell Dotfiles</h1>
 
+[Back To Windows-Dotfiles <-](https://github.com/AndreM222/Windows-Dotfiles) (For Detailed Setup)
+
 <h2>Dependencies 📃</h2>
 
 - Git >= 2.19.0 (for partial clones support)
