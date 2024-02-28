@@ -45,11 +45,11 @@ Set-Alias unzip Expand-Archive
 
 Set-Alias g git
 
-function rmf ($path){ rm -force $path }
+function rmf($path) { rm -force $path }
 
 function la { ls -force @args }
 
-function which ($command) {
+function which($command) {
     Get-Command -Name $command -ErrorAction SilentlyContinue |
         Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 } 
