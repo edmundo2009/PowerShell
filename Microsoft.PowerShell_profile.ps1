@@ -12,7 +12,6 @@ Set-PSReadLineOption -EditMode Emacs
 Set-PSReadLineOption -BellStyle None
 Set-PSReadLineOption -PredictionSource History
 
-Set-PSReadLineKeyHandler -Chord 'Ctrl+a' -Function SelectAll
 Set-PSReadLineKeyHandler -Chord 'Ctrl+d' -Function DeleteWord
 Set-PSReadLineKeyHandler -Chord 'Ctrl+Backspace' -Function DeleteChar
 Set-PSReadLineKeyHandler -Chord 'Ctrl+LeftArrow' -Function BackwardWord
