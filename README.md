@@ -93,11 +93,10 @@ echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 <h2>Directory Structure 🗂️</h2>
 
 ```
-📂$HOME/Documents/PowerShell
+📂$HOME/.config/PowerShell
 |__📂themes
 |   |__📄minimalNight.omp.json
-|__📄Microsoft.PowerShell_profile.ps1
-|__📄powershell.config.json
+|__📄user_profile.ps1
 ```
 
 <h2>Languages 🗣️</h2>
@@ -123,7 +122,7 @@ echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 
 <h5>Dotnet - Windows Installed</h5>
 
-`C-Sharp` dotnet tool install --global csharp-ls 
+`C-Sharp` dotnet tool install --global csharp-ls
 
 <h3>Format Languages 📄 <hr style="margin-top: 0"></h3>
 
@@ -161,7 +160,7 @@ Problem: `Icons are not showing completly`
 
 Fix:
 ```
-Some fonts do not work well with some color themes and can cause that issue or the terminal. 
+Some fonts do not work well with some color themes and can cause that issue or the terminal.
 You have to try until you find the right font, switch the theme, terminal or make tweaks by yourself. Generaly fonts ending with mono work.
 ```
 

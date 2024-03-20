@@ -1,3 +1,4 @@
+
 # set PowerShell to UTF-8
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
@@ -19,7 +20,7 @@ Set-PSReadLineKeyHandler -Chord 'Ctrl+RightArrow' -Function ForwardWord
 
 # Fzf
 Import-Module PSFzf
-Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r' 
+Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 $env:FZF_DEFAULT_OPTS="--color=fg:#f8f8f2,hl:#bd93f9,gutter:-1 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#8be9fd,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4"
 
@@ -51,9 +52,9 @@ function la { ls -force @args }
 function which($command) {
     Get-Command -Name $command -ErrorAction SilentlyContinue |
         Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
-} 
+}
 
-function server([string]$SERVERNAME) { 
+function server([string]$SERVERNAME) {
     if ($SERVERNAME) { netstat -ano | findstr "$SERVERNAME" }
     else { netstat -ano }
 }
