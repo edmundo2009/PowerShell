@@ -94,20 +94,6 @@
                     }
                 },
                 {
-                    "type": "docker",
-                    "style": "diamond",
-                    "powerline_symbol": "\uE0B0",
-                    "leading_diamond": "\ue0b2",
-                    "trailing_diamond": "<transparent,#111111>\ue0b2</>",
-                    "foreground": "#35B5EB",
-                    "background": "#111111",
-                    "template": " \ue650{{ .Context }} ",
-                    "properties": {
-                        "prefix": " \uE718 ",
-                        "fetch_version": false
-                    }
-                },
-                {
                     "background": "#17D7A0",
                     "background_templates": [
                         "{{ if or (.Working.Changed) (.Staging.Changed) }}#ff9900{{ end }}",
