@@ -1,38 +1,42 @@
-<h1>PowerShell Dotfiles</h1>
+# PowerShell Dotfiles
+
+## Contents 📦
+
+- Powershell Configuration
+
+## Navigation ✈️
 
 [Back To Windows-Dotfiles <-](https://github.com/AndreM222/Windows-Dotfiles) (For Detailed Setup)
 
-<h2>Dependencies 📃</h2>
+- [Navigate To Neovim Dotfiles <-](https://github.com/AndreM222/nvim) (For Detailed Setup)
+
+- [Navigate To Dotfile Automizer <-](https://github.com/AndreM222/Dotfile-Automizer) (For Detailed Setup)
+
+## Dependencies 📃
 
 - Git >= 2.19.0 (for partial clones support)
 
 - Nerd Fonts >= 3.0
 
-<h2>Contents 📦</h2>
+## Font 🖌️
 
-- Powershell Configuration
+- [FiraCode-NF-Mono](https://www.nerdfonts.com/font-downloads) - Font
 
-<h2>Font 🖌️</h2>
-
-- [JetBrainsMonoNL NFM](https://www.nerdfonts.com/font-downloads) - Font
-
-<h2>Theme 🎭</h2>
+## Theme 🎭
 
 - [Dracula](https://draculatheme.com/windows-terminal) - Dracula Color Theme
 
-<h2>Terminal 📟</h2>
+## Terminal 📟
 
 - [Windows terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) - Terminal
 
-<h2>Shell 🛡️</h2>
+## Shell 🛡️
 
 - [PowerShell](https://apps.microsoft.com/detail/powershell/9MZ1SNWT0N5D?hl=en-us&gl=US) - Shell
 
-<h2>Setup ⚒️</h2>
+## Setup ⚒️
 
-<h5>Package Managers 📦</h5>
-
-- [Python](https://www.python.org/) - `winget install python` - <span style="opacity:30%">pip</span>
+##### Package Managers 📦
 
 - [Rust](https://www.rust-lang.org/) - `winget install Rustlang.Rust.GNU` - <span style="opacity:30%">cargo</span>
 
@@ -45,7 +49,7 @@ nvm install lts
 nvm use lts
 ```
 
-<h5>Winget - Windows Installed</h5>
+##### Winget - Windows Installed
 
 - [Git](https://git-scm.com/download/win) - `winget install Git.Git`
 - [Sudo & Jq](https://winget.run/) - `winget install gsudo jqlang.jq`
@@ -61,15 +65,15 @@ nvm use lts
 - [RipGrep](https://github.com/BurntSushi/ripgrep) - `winget install BurntSushi.ripgrep.MSVC`
 - [LazyGit](https://github.com/jesseduffield/lazygit) - `winget install lazygit`
 
-<h5>Scoop - Needs Installation</h5>
+##### Scoop - Needs Installation
 
 - [Fira-Font](https://github.com/ryanoasis/nerd-fonts) - `scoop install FiraCode-NF-Mono`
 
-<h5>Cargo - Needs Installation</h5>
+##### Cargo - Needs Installation
 
 - [Gen-License](https://github.com/nexxeln/license-generator) - `cargo install gen-license`
 
-<h5>Powershell - Powershell Installed</h5>
+##### Powershell - Powershell Installed
 
 - [PSFzf](https://github.com/kelleyma49/PSFzf) - `Install-Module -Name PSFzf`
 - [Posh-Git](https://www.powershellgallery.com/packages/posh-git) - `Install-Module posh-git -Scope CurrentUser`
@@ -77,7 +81,7 @@ nvm use lts
 - [PSReadLine](https://github.com/PowerShell/PSReadLine) - `Install-Module PSReadLine -AllowPrerelease -Force`
 - [Z Directory](https://www.powershellgallery.com/packages/z/1.1.13) - `Install-Module -Name z`
 
-<h5>NodeJS - Needs Installation</h5>
+##### NodeJS - Needs Installation
 
 - [Comitizen](https://github.com/streamich/git-cz)
 ```
@@ -90,7 +94,7 @@ echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 
 - [Npm-Check-Updates](https://www.npmjs.com/package/npm-check-updates) - `npm install -g npm-check-updates`
 
-<h2>Directory Structure 🗂️</h2>
+## Directory Structure 🗂️
 
 ```
 📂$HOME/.config/PowerShell
@@ -99,59 +103,7 @@ echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 |__📄user_profile.ps1
 ```
 
-<h2>Languages 🗣️</h2>
-<details>
-<summary>Completion, Format, Compiler, and Linter</summary>
-<h3>Servers 🗃️ <hr style="margin-top: 0"></h3>
-
-<h5>Winget - Windows Installed</h5>
-
-`C++` winget install clangd
-
-`Lua` winget install lua-language-server
-
-<h5>NodeJS - Needs Installation</h5>
-
-`Live-Server` npm install -g live-server
-
-`Python` npm install -g pyright
-
-`Typescript` npm install -g typescript typescript-language-server
-
-`Tailwind CSS` npm install -g tailwindcss-language-server
-
-<h5>Dotnet - Windows Installed</h5>
-
-`C-Sharp` dotnet tool install --global csharp-ls
-
-<h3>Format Languages 📄 <hr style="margin-top: 0"></h3>
-
-`C++` at the setup of llvm
-
-<h5>Pip - Needs Installation</h5>
-
-`Python` pip install --upgrade autopep8
-
-<h5>NodeJS - Needs Installation</h5>
-
-`Marksman` npm install -g marksman
-
-`Typescript` npm install -g prettier
-
-<h3>Compilers And Intrepeters ⚙️ <hr style="margin-top: 0"></h3>
-
-<h5>Winget - Windows Installed</h5>
-
-- [Python](https://www.python.org/) - At the installation of Python Package Manager
-
-- [Rust](https://www.rust-lang.org/) - At the installation of Rust Package Manager
-
-- [C++](https://winlibs.com/) - winget install -i LLVM.LLVM
-
-<h5>NodeJS - Needs Installation</h5>
-
-- [NodeJS](https://github.com/nvm-sh/nvm) - At the installation of NodeJS Package Manager
-</details>
+## Info ℹ️
 
 <details>
 <summary>Debugging 🐞</summary>
@@ -162,20 +114,6 @@ Fix:
 ```
 Some fonts do not work well with some color themes and can cause that issue or the terminal.
 You have to try until you find the right font, switch the theme, terminal or make tweaks by yourself. Generaly fonts ending with mono work.
-```
-
-Problem: `C-Sharp not running`
-
-Fix: `You are required to create a project for it to work`
-
-Problem: `Customize format`
-
-Fix:
-```
-Look for the documentation to make the changes on the CLI.
-
-For clang-format: https://clang.llvm.org/docs/ClangFormat.html
-For prettier: https://prettier.io/docs/en/options.html#vue-files-script-and-style-tags-indentation
 ```
 
 Problem: `Commitizen opening editor instead of commit options`
@@ -193,14 +131,5 @@ Fix:
 scoop config SCOOP_BRANCH master
 scoop update
 ```
-
-Problem: `C++ compiler not working`
-
-Fix:
-```
-When installing LLVM choose add to path.
-Also be use to be using clang if you are using LLVM
-```
-
 
 </details>
