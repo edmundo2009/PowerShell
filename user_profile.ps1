@@ -5,7 +5,13 @@
 # Prompt
 Import-Module -Name Terminal-Icons
 
-$omp_file = Join-Path $PSScriptRoot "./themes/minimalNight.omp.json"
+$theme = "accent_minimalNight.omp.json"
+# minimalNight.omp.json -> This one is predefined colors
+# term_minimalNight.omp.json -> This one changes based only on the terminal color
+# term_minimalNight.omp.json -> This one changes only alerts based only on the terminal color
+# accent_minimalNight.omp.json -> This one changes based on the color of the terminal and the accent of pc (Windows Only)
+
+$omp_file = Join-Path $PSScriptRoot "./themes/"$theme
 oh-my-posh init pwsh --config $omp_file | Invoke-Expression
 
 # PSReadLine
