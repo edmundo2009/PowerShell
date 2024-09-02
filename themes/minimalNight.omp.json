@@ -16,7 +16,7 @@
                     },
                     "style": "diamond",
                     "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}",
-                    "trailing_diamond": "<transparent,#2e2e2e>\ue0b2</>",
+                    "trailing_diamond": "\uE0d6",
                     "type": "os"
                 },
                 {
@@ -25,7 +25,7 @@
                     "leading_diamond": "\ue0b2",
                     "style": "diamond",
                     "template": "\uf489 {{ .Name }}",
-                    "trailing_diamond": "<transparent,#2e2e2e>\ue0b2</>",
+                    "trailing_diamond": "\uE0d6",
                     "type": "shell"
                 },
                 {
@@ -41,7 +41,7 @@
                     "foreground": "#2e2e2e",
                     "style": "diamond",
                     "template": "MEM: {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB \ue706 ",
-                    "trailing_diamond": "<transparent,#f34168>\ue0b2</>",
+                    "trailing_diamond": "\uE0d6",
                     "type": "sysinfo"
                 },
                 {
@@ -70,7 +70,7 @@
                     "style": "diamond",
                     "powerline_symbol": "\uE0B0",
                     "leading_diamond": "\ue0b2",
-                    "trailing_diamond": "<transparent,#111111>\ue0b2</>",
+                    "trailing_diamond": "\uE0d6",
                     "foreground": "#88BD5B",
                     "background": "#111111",
                     "template": " \uE718{{ .Full }} ",
@@ -84,7 +84,7 @@
                     "style": "diamond",
                     "powerline_symbol": "\uE0B0",
                     "leading_diamond": "\ue0b2",
-                    "trailing_diamond": "<transparent,#111111>\ue0b2</>",
+                    "trailing_diamond": "\uE0d6",
                     "foreground": "#FA9904",
                     "background": "#111111",
                     "template": " \udb83\ude0f{{.Profile}}{{if .Region}}@{{.Region}}{{end}} ",

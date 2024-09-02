@@ -22,7 +22,7 @@
                     },
                     "style": "diamond",
                     "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}",
-                    "trailing_diamond": "<transparent,parentBackground>\ue0b2</>",
+                    "trailing_diamond": "\uE0d6",
                     "type": "os"
                 },
                 {
@@ -31,7 +31,7 @@
                     "leading_diamond": "\ue0b2",
                     "style": "diamond",
                     "template": "\uf489 {{ .Name }}",
-                    "trailing_diamond": "<transparent,parentBackground>\ue0b2</>",
+                    "trailing_diamond": "\uE0d6",
                     "type": "shell"
                 },
                 {
@@ -47,7 +47,7 @@
                     "foreground": "p:DeepGrey",
                     "style": "diamond",
                     "template": "MEM: {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB \ue706 ",
-                    "trailing_diamond": "<transparent,p:MainBG>\ue0b2</>",
+                    "trailing_diamond": "\uE0d6",
                     "type": "sysinfo"
                 },
                 {
@@ -78,7 +78,7 @@
                     "leading_diamond": "\ue0b2",
                     "foreground": "lightGreen",
                     "background": "p:DeepBlack",
-                    "trailing_diamond": "<transparent,parentBackground>\ue0b2</>",
+                    "trailing_diamond": "\uE0d6",
                     "template": " \uE718{{ .Full }} ",
                     "properties": {
                         "prefix": " \uE718 ",
@@ -92,7 +92,7 @@
                     "leading_diamond": "\ue0b2",
                     "foreground": "yellow",
                     "background": "p:DeepBlack",
-                    "trailing_diamond": "<transparent,parentBackground>\ue0b2</>",
+                    "trailing_diamond": "\uE0d6",
                     "template": " \udb83\ude0f{{.Profile}}{{if .Region}}@{{.Region}}{{end}} ",
                     "properties": {
                         "prefix": " \uE718 ",
