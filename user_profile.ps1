@@ -1,17 +1,16 @@
-
 # set PowerShell to UTF-8
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
 # Prompt
 Import-Module -Name Terminal-Icons
 
-$theme = "accent_minimalNight.omp.json"
-# minimalNight.omp.json -> This one is predefined colors
-# term_minimalNight.omp.json -> This one changes based only on the terminal color
-# term_minimalNight.omp.json -> This one changes only alerts based only on the terminal color
-# accent_minimalNight.omp.json -> This one changes based on the color of the terminal and the accent of pc (Windows Only)
+$theme = "accent_minimalNight"
+# minimalNight -> This one is predefined colors
+# term_minimalNight -> This one changes based only on the terminal color
+# alert_minimalNight -> This one changes only alerts based only on the terminal color
+# accent_minimalNight -> This one changes based on the color of the terminal and the accent of pc (Windows Only)
 
-$omp_file = Join-Path $PSScriptRoot "./themes/"$theme
+$omp_file = Join-Path $PSScriptRoot "./themes/"$theme".omp.json"
 oh-my-posh init pwsh --config $omp_file | Invoke-Expression
 
 # PSReadLine
@@ -28,10 +27,10 @@ Set-PSReadLineKeyHandler -Chord 'Ctrl+RightArrow' -Function ForwardWord
 Import-Module PSFzf
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
-$env:FZF_DEFAULT_OPTS="--color=fg:#f8f8f2,hl:#bd93f9,gutter:-1 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#8be9fd,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4"
+$env:FZF_DEFAULT_OPTS="--color=fg:white,hl:blue,gutter:-1 --color=fg+:white,bg+:bright-black,hl+:blue --color=info:yellow,prompt:cyan,pointer:magenta --color=marker:magenta,spinner:yellow,header:bright-black"
 
 # Bat
-$env:BAT_THEME="Dracula"
+$env:BAT_THEME="base16"
 
 # Alias
 Set-Alias -Name vi -Value nvim
@@ -51,9 +50,9 @@ Set-Alias unzip Expand-Archive
 
 Set-Alias g git
 
-function rmf($path) { rm -force $path }
+function rmf($path) { Remove-Item -force $path }
 
-function la { ls -force @args }
+function la { Get-ChildItem -force @args }
 
 function which($command) {
     Get-Command -Name $command -ErrorAction SilentlyContinue |
@@ -65,7 +64,7 @@ function server([string]$SERVERNAME) {
     else { netstat -ano }
 }
 
-function drives { gdr -PSProvider 'FileSystem' }
+function drives { Get-PSDrive -PSProvider 'FileSystem' }
 
 # Git
 Import-Module posh-git
