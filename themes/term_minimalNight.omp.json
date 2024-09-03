@@ -29,7 +29,7 @@
                     "foreground": "white",
                     "leading_diamond": "\ue0b2",
                     "style": "diamond",
-                    "template": "\uf489 {{ .Name }}",
+                    "template": "\uf489 {{ .Name }} ",
                     "trailing_diamond": "\uE0d6",
                     "type": "shell"
                 },
