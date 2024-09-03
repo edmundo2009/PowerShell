@@ -85,7 +85,7 @@
                     "leading_diamond": "\ue0b2",
                     "trailing_diamond": "\uE0d6",
                     "foreground": "p:Node",
-                    "background": "p:DeepGrey",
+                    "background": "p:DeepBlack",
                     "template": " \uE718{{ .Full }} ",
                     "properties": {
                         "prefix": " \uE718 ",
@@ -99,7 +99,7 @@
                     "leading_diamond": "\ue0b2",
                     "trailing_diamond": "\uE0d6",
                     "foreground": "p:Aws",
-                    "background": "p:DeepGrey",
+                    "background": "p:DeepBlack",
                     "template": " \udb83\ude0f{{.Profile}}{{if .Region}}@{{.Region}}{{end}} ",
                     "properties": {
                         "prefix": " \uE718 ",
