@@ -6,11 +6,11 @@
 
 ## Navigation ✈️
 
-[Back To Windows-Dotfiles <-](https://github.com/AndreM222/Windows-Dotfiles) (For Detailed Setup)
+[Back To Windows-Dotfiles <-](https://github.com/edmundo2009/Windows-Dotfiles) (For Detailed Setup)
 
-- [Navigate To Neovim Dotfiles <-](https://github.com/AndreM222/nvim) (For Detailed Setup)
+- [Navigate To Neovim Dotfiles <-](https://github.com/edmundo2009/nvim) (For Detailed Setup)
 
-- [Navigate To Dotfile Automizer <-](https://github.com/AndreM222/Dotfile-Automizer) (For Detailed Setup)
+- [Navigate To Dotfile Automizer <-](https://github.com/edmundo2009/Dotfile-Automizer) (For Detailed Setup)
 
 ## Dependencies 📃
 

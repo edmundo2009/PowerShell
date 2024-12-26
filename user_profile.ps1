@@ -33,6 +33,7 @@ $env:FZF_DEFAULT_OPTS="--color=fg:white,hl:blue,gutter:-1 --color=fg+:white,bg+:
 $env:BAT_THEME="base16"
 
 # Alias
+Set-Alias -Name v -Value nvim
 Set-Alias -Name vi -Value nvim
 Set-Alias -Name vim -Value nvim
 
